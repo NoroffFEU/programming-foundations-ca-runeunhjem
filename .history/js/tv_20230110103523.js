@@ -16,7 +16,6 @@ var tv = {
     "TV2 Play",
     "Amazon Prime",
     "YouTube",
-    "Spotify",
   ], // Array
   currentVolume: 40, // Number
   adjustVolume: function (volume) {
@@ -41,12 +40,11 @@ var tv = {
     if (this.availableApps.includes(apps)) {
       console.log(`Switching to the ${apps} App`);
     } else {
-      console.log(
-        "This app is not installed on this TV. Please download and install to use it"
+      console.log(        "This app is not installed on this TV. Please download and install to use it"
       );
     }
   }, // End of changeApps
-}; // **** End of tv object ****
+};
 tv.adjustVolume(70); // adjust currentVolume to 70 (REMEMBER that adjustVolume is a property of tv)
 tv.adjustVolume(101); // adjust currentVolume to 101 wich is not within the 0 and 100 required in the if(volume...
 console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume

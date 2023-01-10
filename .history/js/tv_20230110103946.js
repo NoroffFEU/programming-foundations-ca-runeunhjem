@@ -16,7 +16,7 @@ var tv = {
     "TV2 Play",
     "Amazon Prime",
     "YouTube",
-    "Spotify",
+    "Spotify"
   ], // Array
   currentVolume: 40, // Number
   adjustVolume: function (volume) {

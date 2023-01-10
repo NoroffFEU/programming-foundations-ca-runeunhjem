@@ -16,7 +16,6 @@ var tv = {
     "TV2 Play",
     "Amazon Prime",
     "YouTube",
-    "Spotify",
   ], // Array
   currentVolume: 40, // Number
   adjustVolume: function (volume) {
@@ -46,7 +45,7 @@ var tv = {
       );
     }
   }, // End of changeApps
-}; // **** End of tv object ****
+};
 tv.adjustVolume(70); // adjust currentVolume to 70 (REMEMBER that adjustVolume is a property of tv)
 tv.adjustVolume(101); // adjust currentVolume to 101 wich is not within the 0 and 100 required in the if(volume...
 console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
