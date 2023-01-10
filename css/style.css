@@ -6,8 +6,8 @@ body {
 .tv__frame {
   border: 13px solid #000;
   border-radius: 0.2em;
-  height: 900px;
-  width: 1600px;
+  height: 864px;
+  width: 1536px;
 }
 
 .tv__inside {
