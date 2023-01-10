@@ -51,7 +51,7 @@ var tv = {
         "This app is not installed on this TV. Please download and install to use it"
       );
     }
-  }, // End of changeApps and the LAST of the tv object's properties
+  } // End of changeApps and the LAST of the objects properties
 }; // **** End of tv object ****
 
 // Running the functions to check if they work as they should in the console:

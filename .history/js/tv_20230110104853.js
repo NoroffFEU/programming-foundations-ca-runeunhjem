@@ -1,5 +1,4 @@
 // ********** My real life object here will be my TV **********
-
 var tv = {
   // Using var as that is the one used in the modules
   // The real life object's properties:
@@ -22,7 +21,7 @@ var tv = {
     "Spotify",
   ], // Array
   currentVolume: 40, // Number
-
+  
   // ***** Function to adjust the volume: *****
   adjustVolume: function (volume) {
     if (volume >= 0 && volume <= 100) {
@@ -51,7 +50,8 @@ var tv = {
         "This app is not installed on this TV. Please download and install to use it"
       );
     }
-  }, // End of changeApps and the LAST of the tv object's properties
+  }, // End of changeApps
+
 }; // **** End of tv object ****
 
 // Running the functions to check if they work as they should in the console:

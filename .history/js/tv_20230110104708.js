@@ -1,5 +1,4 @@
 // ********** My real life object here will be my TV **********
-
 var tv = {
   // Using var as that is the one used in the modules
   // The real life object's properties:
@@ -22,7 +21,7 @@ var tv = {
     "Spotify",
   ], // Array
   currentVolume: 40, // Number
-
+  
   // ***** Function to adjust the volume: *****
   adjustVolume: function (volume) {
     if (volume >= 0 && volume <= 100) {
@@ -41,9 +40,9 @@ var tv = {
       console.log("This input does not exist on this TV");
     }
   }, // End of changeInput
-
-  // ***** Function to switch to built inn app in the TV: *****
+  
   changeApps: function (apps) {
+    // Function to switch to built inn app in the TV
     if (this.availableApps.includes(apps)) {
       console.log(`Switching to the ${apps} App`);
     } else {
@@ -51,10 +50,8 @@ var tv = {
         "This app is not installed on this TV. Please download and install to use it"
       );
     }
-  }, // End of changeApps and the LAST of the tv object's properties
+  }, // End of changeApps
 }; // **** End of tv object ****
-
-// Running the functions to check if they work as they should in the console:
 tv.adjustVolume(70); // adjust currentVolume to 70 (REMEMBER that adjustVolume is a property of tv)
 tv.adjustVolume(101); // adjust currentVolume to 101 wich is not within the 0 and 100 required in the if(volume...
 console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
