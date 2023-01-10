@@ -28,4 +28,4 @@ var tv = { // The real life object
 
 };
 tv.adjustVolume(70); // adjust currentVolume to 70
-console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
+console.log(tv.currentVolume);

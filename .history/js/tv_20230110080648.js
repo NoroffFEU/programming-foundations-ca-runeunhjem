@@ -17,15 +17,10 @@ var tv = { // The real life object
     "YouTube",
   ], // Array
   currentVolume: 20, // Number
-  adjustVolume: function(volume) { // Function to adjust the volume
+  adjustVolume: function(volume) {
     if(volume >= 0 && volume <= 100) {
-        this.currentVolume = volume; // The this keyword will set currentVolume to whatever the adjustVolume("VALUE") value is when calling this function
-        console.log(`Volume is set to ${volume}`);
-    } else {
-        console.log("Volume level is out of range and invalid");
+        this.
     }
   }
 
 };
-tv.adjustVolume(70); // adjust currentVolume to 70
-console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
