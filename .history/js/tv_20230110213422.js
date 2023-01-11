@@ -44,7 +44,7 @@ var tv = {
 
   // ***** Function to switch to built inn app in the TV: *****
   changeApps: function (apps) {
-    if (this.availableApps.includes(apps)) { // ****** CHECK IF THIS CAN BE WRITTEN AS tv.availableApps.includes ***********
+    if (this.availableApps.includes(apps)) { // CHECK IF THIS CAN BE WRITTEN AS tv.availableApps.includes ***********
       console.log(`Switching to the ${apps} App`);
     } else {
       console.log(

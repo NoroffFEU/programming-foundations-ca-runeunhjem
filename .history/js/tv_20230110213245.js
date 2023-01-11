@@ -35,7 +35,7 @@ var tv = {
 
   // ***** Function to change the active TV input: *****
   changeInput: function (input) {
-    if (this.availableInputs.includes(input)) { // ****** CHECK IF THIS CAN BE WRITTEN AS tv.availableInputs.includes ***********
+    if (this.availableInputs.includes(input)) { // CHECK IF THIS CAN BE WRITTEN AS tv.
       console.log(`Changing input to ${input}`);
     } else {
       console.log("This input does not exist on this TV");
@@ -44,7 +44,7 @@ var tv = {
 
   // ***** Function to switch to built inn app in the TV: *****
   changeApps: function (apps) {
-    if (this.availableApps.includes(apps)) { // ****** CHECK IF THIS CAN BE WRITTEN AS tv.availableApps.includes ***********
+    if (this.availableApps.includes(apps)) {
       console.log(`Switching to the ${apps} App`);
     } else {
       console.log(
