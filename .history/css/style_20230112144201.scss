@@ -17,7 +17,6 @@ header {
   // font-size: 1rem;
 }
 .tv__frame {
-  margin: 10px;
   border: 4px solid #000;
   border-radius: 0.2em;
   height: calc(2160px / 10);
@@ -42,19 +41,8 @@ header {
   button {
     width: 90px;
     font-weight: 600;
-    background-color: pink;
+    background-color: lightgoldenrodyellow;
   }
 }
 
-.tv__inputs {
-  margin: 10px;
-}
-
-.apps__row1, .apps__row2 {
-  margin: 10px;
-  button {
-    width: 90px;
-    font-weight: 600;
-    background-color: yellow;
-  }
-}
+.apps__row1, .apps__row2 

@@ -15,9 +15,10 @@ var tv = {
     "Netflix",
     "Disney",
     "Viaplay",
-    "HBO Max",
     "discovery+",
+    "HBO Max",
     "TV2 Play",
+    
     "YouTube",
     "Spotify",
   ], // Array

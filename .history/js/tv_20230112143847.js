@@ -16,7 +16,6 @@ var tv = {
     "Disney",
     "Viaplay",
     "HBO Max",
-    "discovery+",
     "TV2 Play",
     "YouTube",
     "Spotify",

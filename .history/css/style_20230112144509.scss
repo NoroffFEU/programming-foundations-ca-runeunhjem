@@ -42,19 +42,18 @@ header {
   button {
     width: 90px;
     font-weight: 600;
-    background-color: pink;
+    background-color: lightgoldenrodyellow;
   }
 }
 
-.tv__inputs {
-  margin: 10px;
-}
-
-.apps__row1, .apps__row2 {
-  margin: 10px;
+.tv-apps {
   button {
     width: 90px;
     font-weight: 600;
     background-color: yellow;
   }
+}
+
+.tv__inputs, .apps__row1, .apps__row2 {
+  margin: 10px;
 }

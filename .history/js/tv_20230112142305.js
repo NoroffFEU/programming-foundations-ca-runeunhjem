@@ -9,15 +9,16 @@ var tv = {
   resolution: "4K", // String
   hdrSupport: true, // Boolean
   smartTv: true, // Boolean
-  tvIsOn: true, // Boolean
+  smartTv: true, // Boolean
   availableInputs: ["TV (Decoder)", "PC", "Playstation 5", "Chromecast"], // Array
   availableApps: [
     "Netflix",
     "Disney",
     "Viaplay",
-    "HBO Max",
     "discovery+",
+    "HBO Max",
     "TV2 Play",
+    "Amazon Prime",
     "YouTube",
     "Spotify",
   ], // Array
