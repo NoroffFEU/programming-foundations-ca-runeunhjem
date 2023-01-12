@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  padding: 1em 3em;
+}
+
+.tv__frame {
+  border: 3px solid #000;
+  border-radius: 0.2em;
+  height: 900px;
+}/*# sourceMappingURL=style_20230110144915.css.map */
