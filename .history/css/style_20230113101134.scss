@@ -67,10 +67,10 @@ button {
   width: calc(3840px / 11);
   color: var(--btn-txt-clr__inactive);
   text-align: center;
-  h2 {        
+  h2 {
+    width: 80%;
     padding: 0.5em;
     border-bottom: 1px solid red;
-    margin-bottom: 0.5em;
   }
 }
 

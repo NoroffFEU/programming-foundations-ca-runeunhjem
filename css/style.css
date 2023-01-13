@@ -61,6 +61,13 @@ button {
   background-color: #000;
   margin: 0 5px;
   width: 349.0909090909px;
+  color: var(--btn-txt-clr__inactive);
+  text-align: center;
+}
+.remote h2 {
+  padding: 0.5em;
+  border-bottom: 1px solid red;
+  margin-bottom: 0.5em;
 }
 
 .tv__controls, .apps__row1, .apps__row2, .tv__inputs {
