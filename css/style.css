@@ -45,6 +45,11 @@ header h1 {
   font-style: italic;
 }
 
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
 button {
   width: 82px;
   font-size: 0.7rem;
