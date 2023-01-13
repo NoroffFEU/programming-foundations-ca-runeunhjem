@@ -38,3 +38,7 @@ powerButton.onclick =  function alternatePower() {
   }
   
 }
+
+// powerButton.onclick = tv.alternatePower();
+
+// tv.power()

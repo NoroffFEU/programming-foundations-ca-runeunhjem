@@ -1,3 +1,7 @@
+
+
+
+
 // ********** My real life object here will be my TV **********
 
 var tv = {
@@ -78,5 +82,26 @@ tv.changeInput("PC"); // Does exist (remember tv. first)
 tv.changeApps("Youtube"); // Does not exist due to lowerCaps (remember tv. first)
 tv.changeApps("YouTube"); // Does exist (remember tv. first)
 tv.changeApps("HBO Max"); // Does exist (remember tv. first)
-tv.power();
+tv.power(false);
 
+
+powerButton.onclick =  function alternatePower() {
+  if(tv.tvIsOn === true) {
+    console.log("The TV is on - Turning it off");
+    tv.tvIsOn = false;
+    console.log(tv.tvIsOn)
+    powerButton.style.backgroundColor = "red";
+    tv__inside.style.backgroundColor = "#000";
+  } else {
+    console.log("The TV is off - Turning it on");
+    tv.tvIsOn = true;
+    console.log(tv.tvIsOn)
+    powerButton.style.backgroundColor = "green";
+    tv__inside.style.backgroundColor = "darkgrey";
+  }
+  // console.log(tv.tvIsOn);
+}
+
+// powerButton.onclick = tv.alternatePower();
+
+// tv.power()

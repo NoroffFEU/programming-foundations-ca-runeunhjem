@@ -20,21 +20,3 @@ var volDownButton = document.querySelector("#volume-down");
 var hdrButton = document.querySelector("#hdr");
 // TV SCREEN:
 var tv__inside = document.querySelector(".tv__inside");
-
-// ALTERNATE TV POWER ON/OFF
-powerButton.onclick =  function alternatePower() {
-  if(tv.tvIsOn === true) {
-    console.log("The TV is on - Turning it off");
-    tv.tvIsOn = false;
-    console.log(tv.tvIsOn)
-    powerButton.style.backgroundColor = "red";
-    tv__inside.style.backgroundColor = "#000";
-  } else {
-    console.log("The TV is off - Turning it on");
-    tv.tvIsOn = true;
-    console.log(tv.tvIsOn)
-    powerButton.style.backgroundColor = "green";
-    tv__inside.style.backgroundColor = "darkgrey";
-  }
-  
-}

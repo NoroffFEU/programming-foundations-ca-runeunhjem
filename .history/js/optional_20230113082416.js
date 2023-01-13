@@ -38,3 +38,4 @@ powerButton.onclick =  function alternatePower() {
   }
   
 }
+

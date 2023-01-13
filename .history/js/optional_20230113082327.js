@@ -21,7 +21,7 @@ var hdrButton = document.querySelector("#hdr");
 // TV SCREEN:
 var tv__inside = document.querySelector(".tv__inside");
 
-// ALTERNATE TV POWER ON/OFF
+// 
 powerButton.onclick =  function alternatePower() {
   if(tv.tvIsOn === true) {
     console.log("The TV is on - Turning it off");
@@ -36,5 +36,9 @@ powerButton.onclick =  function alternatePower() {
     powerButton.style.backgroundColor = "green";
     tv__inside.style.backgroundColor = "darkgrey";
   }
-  
+  // console.log(tv.tvIsOn);
 }
+
+// powerButton.onclick = tv.alternatePower();
+
+// tv.power()

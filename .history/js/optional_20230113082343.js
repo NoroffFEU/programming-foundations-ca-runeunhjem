@@ -36,5 +36,9 @@ powerButton.onclick =  function alternatePower() {
     powerButton.style.backgroundColor = "green";
     tv__inside.style.backgroundColor = "darkgrey";
   }
-  
+  // console.log(tv.tvIsOn);
 }
+
+// powerButton.onclick = tv.alternatePower();
+
+// tv.power()
