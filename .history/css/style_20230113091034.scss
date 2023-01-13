@@ -1,0 +1,78 @@
+:root {
+  --btn-clr__inactive: #111;
+  --btn-clr-active: #cdcdcd;
+  --btn-txt-clr__inactive: #FFF;
+  --btn-txt-clr__active: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  width: 100vw;
+  display: block;
+  font-size: 16px;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  h1 {
+    margin: 10px;
+    // font-size: 16px;
+  }
+  // font-size: 1rem;
+}
+.tv__frame {
+  margin: 10px;
+  border: 4px solid #000;
+  border-radius: 0.2em;
+  height: calc(2160px / 10);
+  width: calc(3840px / 10);
+}
+
+.tv__inside {
+  background-color: darkgrey;
+  
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+button {
+  width: 90px;
+  padding: 5px;
+  border-radius: 1em;
+  // font-weight: 600;
+  background-color: var(--btn-clr__inactive);
+  color: var(--btn-txt-clr__inactive)
+}
+.remote {
+  padding: 1em 0 1em 5px;
+  
+}
+
+.tv__inputs, .tv__controls {
+  margin: 10px;
+}
+
+.apps__row1, .apps__row2 {
+  margin: 10px;
+  button {
+    width: 90px;
+    padding: 3px;
+    // font-weight: 600;
+    background-color: var(--btn-clr__inactive);
+    color: var(--btn-txt-clr__inactive);
+  }
+}
