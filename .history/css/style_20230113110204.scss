@@ -8,7 +8,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
 body {
@@ -16,30 +16,33 @@ body {
   display: block;
   font-size: 16px;
   padding: 0;
+
 }
 
 header {
   width: 100%;
-}
-header h1 {
-  margin: 5px;
+  h1 {
+    margin: 5px;  
+  }  
 }
 
 .tv__frame {
   margin: 5px;
   border: 4px solid #000;
   border-radius: 0.2em;
-  height: 196.3636363636px;
-  width: 349.0909090909px;
+  height: calc(2160px / 11);
+  width: calc(3840px / 11);
 }
 
 .tv__inside {
   background-color: darkgrey;
+  
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
   align-items: center;
+  // font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   font-style: italic;
@@ -52,12 +55,13 @@ button {
   border-radius: 1em;
   border: 1px solid;
   border-color: grey;
+  // font-weight: 600;
   background-color: var(--btn-clr__inactive);
   color: var(--btn-txt-clr__inactive);
 }
 
 .remote {
-  height: 400px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -67,17 +71,18 @@ button {
   border-radius: 0.5em;
   background-color: #000;
   margin: 0 5px;
-  width: 349.0909090909px;
-  color: var(--btn-txt-clr__inactive);
-}
-.remote h2 {
-  padding: 0.5em;
-  border-bottom: 1px solid red;
-  margin-bottom: 1em;
+  width: calc(3840px / 11);
+  color: var(--btn-txt-clr__inactive);  
+  h2 {        
+    padding: 0.5em;
+    border-bottom: 1px solid red;
+    margin-bottom: 1em;
+  }
 }
 
 hr {
   height: 1px;
+  // background-color: green;
   border-color: green;
   width: 60%;
   display: flex;
@@ -91,18 +96,16 @@ hr {
   gap: 4px;
   padding: 0.5em 0;
 }
-
 .apps__row1, .tv__controls {
   margin-top: 1em;
 }
-
-.tv__controls, .apps__row2, .tv__inputs {
+.apps__row2, .tv__inputs {
   margin-bottom: 1em;
 }
 
 .logo {
-  height: 30px;
-  width: 90px;
+  // height: 60%;
+  // width: 80%;
   background-image: url(../images/Samsung_Logo.svg);
   background-size: cover;
-}/*# sourceMappingURL=style.css.map */
+}
