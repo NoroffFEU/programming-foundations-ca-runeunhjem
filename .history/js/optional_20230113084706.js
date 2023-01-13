@@ -29,14 +29,13 @@ powerButton.onclick =  function alternatePower() {
     console.log(tv.tvIsOn)
     powerButton.style.backgroundColor = "red";
     tv__inside.style.backgroundColor = "#111";
-    tv__inside.innerHTML = "";
+    tv__inside
   } else {
     console.log("The TV is off - Turning it on");
     tv.tvIsOn = true;
     console.log(tv.tvIsOn)
     powerButton.style.backgroundColor = "green";
     tv__inside.style.backgroundColor = "darkgrey";
-    tv__inside.innerHTML = "What do you want to watch?";
   }
   
 }

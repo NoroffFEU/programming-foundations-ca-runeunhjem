@@ -36,7 +36,7 @@ powerButton.onclick =  function alternatePower() {
     console.log(tv.tvIsOn)
     powerButton.style.backgroundColor = "green";
     tv__inside.style.backgroundColor = "darkgrey";
-    tv__inside.innerHTML = "What do you want to watch?";
+    tv
   }
   
 }

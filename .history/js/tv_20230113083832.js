@@ -78,5 +78,5 @@ tv.changeInput("PC"); // Does exist (remember tv. first)
 tv.changeApps("Youtube"); // Does not exist due to lowerCaps (remember tv. first)
 tv.changeApps("YouTube"); // Does exist (remember tv. first)
 tv.changeApps("HBO Max"); // Does exist (remember tv. first)
-tv.power(); // Get power state and switch to correct power button color and TV image
+tv.power(); // Set color of Power stst
 
