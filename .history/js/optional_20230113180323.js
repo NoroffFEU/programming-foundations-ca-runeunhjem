@@ -48,10 +48,10 @@ powerButton.onclick =  function alternatePower() {
 //   tv.activeTvSource = "TV";
 //   console.log("After ===>", tv.activeTvSource);
 // }
-  // document.querySelector("button").addEventListener("click", function ()) {
-  //   button.style.backgroundColor = "#222";
-  // }
-
+  pcButton.addEventListener(onclick) {
+    button.style.backgroundColor = "#222";
+  }
+  
   tvButton.onclick = color => {
   tvButton.style.backgroundColor = "#CDCDCD";
   tvButton.style.color = "#000";
