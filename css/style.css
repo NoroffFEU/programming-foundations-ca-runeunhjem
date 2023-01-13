@@ -45,7 +45,7 @@ header h1 {
   background-color: pink;
 }
 
-.tv__inputs {
+.tv__inputs, .tv__controls {
   margin: 10px;
 }
 
