@@ -100,31 +100,3 @@ tv.power(); // Get power state and switch to correct power button color and TV i
 
 // *******************************************
 
-// MAKE ARRAY OF ALL BUTTONS:
-const allButtons = [
-  tvButton,
-  pcButton,
-  ps5Button,
-  chromecastButton,
-  netflixButton,
-  disneyButton,
-  viaplayButton,
-  hboButton,
-  discoveryButton,
-  tv2Button,
-  youtubeButton,
-  spotifyButton,
-  powerButton,
-  volUpButton,
-  volDownButton,
-  hdrButton
-];
-console.log(allButtons);
-
-// MAKE FUNCTION TO RESET ALL BUTTON BACKGROUNDS
-function resetButtonBackgroundColor() {
-allButtons.forEach(button => {
-  button.style.backgroundColor = "#222";
-  button.style.color = "#FFF";
-});
-}

@@ -125,6 +125,5 @@ console.log(allButtons);
 function resetButtonBackgroundColor() {
 allButtons.forEach(button => {
   button.style.backgroundColor = "#222";
-  button.style.color = "#FFF";
 });
 }

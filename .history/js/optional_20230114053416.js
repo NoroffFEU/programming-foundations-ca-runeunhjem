@@ -101,7 +101,6 @@ ps5Button.onclick = function () {
   console.log("After ===>", tv.activeTvSource);
 };
 chromecastButton.onclick = function () {
-  resetButtonBackgroundColor();
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   console.log("Before ===>", tv.activeTvSource);

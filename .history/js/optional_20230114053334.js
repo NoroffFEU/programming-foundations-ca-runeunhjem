@@ -93,7 +93,6 @@ pcButton.onclick = function () {
   console.log("After ===>", tv.activeTvSource);
 };
 ps5Button.onclick = function () {
-  resetButtonBackgroundColor();
   ps5Button.style.backgroundColor = "#CDCDCD";
   ps5Button.style.color = "#000";
   console.log("Before ===>", tv.activeTvSource);
@@ -101,7 +100,6 @@ ps5Button.onclick = function () {
   console.log("After ===>", tv.activeTvSource);
 };
 chromecastButton.onclick = function () {
-  resetButtonBackgroundColor();
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   console.log("Before ===>", tv.activeTvSource);

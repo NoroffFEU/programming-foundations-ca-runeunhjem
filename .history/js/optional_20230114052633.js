@@ -69,14 +69,13 @@ powerButton.onclick = function alternatePower() {
 //   });
 // }
 
-function resetButtonBackgroundColor() {
-  allButtons.forEach(button => {
-    button.style.backgroundColor = "#222";
-  });
-  }
 
 tvButton.onclick = function () {
-  resetButtonBackgroundColor();
+  function resetButtonBackgroundColor() {
+    allButtons.forEach(button => {
+      buttons.style.backgroundColor = "#222";
+    });
+    }
   tvButton.style.backgroundColor = "#CDCDCD";
   tvButton.style.color = "#000";
   console.log("Before ===>", tv.activeTvSource);
@@ -85,7 +84,6 @@ tvButton.onclick = function () {
 };
 
 pcButton.onclick = function () {
-  resetButtonBackgroundColor();
   pcButton.style.backgroundColor = "#CDCDCD";
   pcButton.style.color = "#000";
   console.log("Before ===>", tv.activeTvSource);
@@ -93,7 +91,6 @@ pcButton.onclick = function () {
   console.log("After ===>", tv.activeTvSource);
 };
 ps5Button.onclick = function () {
-  resetButtonBackgroundColor();
   ps5Button.style.backgroundColor = "#CDCDCD";
   ps5Button.style.color = "#000";
   console.log("Before ===>", tv.activeTvSource);
@@ -101,7 +98,6 @@ ps5Button.onclick = function () {
   console.log("After ===>", tv.activeTvSource);
 };
 chromecastButton.onclick = function () {
-  resetButtonBackgroundColor();
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   console.log("Before ===>", tv.activeTvSource);
@@ -125,9 +121,8 @@ chromecastButton.onclick = function () {
 // var chromecastButton = document.querySelector("#chromecast");
 
 // MAKE FUNCTION TO RESET ALL BUTTON BACKGROUNDS
-
-// function resetButtonBackgroundColor() {
-//   allButtons.forEach(button => {
-//     button.style.backgroundColor = "#222";
-//   });
-//   }
+function resetButtonBackgroundColor() {
+  allButtons.forEach(button => {
+    buttons.style.backgroundColor = "#222";
+  });
+  }
