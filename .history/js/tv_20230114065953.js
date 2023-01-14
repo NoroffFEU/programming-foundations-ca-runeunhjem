@@ -51,7 +51,8 @@ var tv = {
   }, // End of power function
 
   // ***** Function to change either the active TV input or APP: *****
-  changeSource: function (input) { // Functions within an object are also called methods    
+  changeSource: function (input) { // Functions within an object are also called methods
+    
     if (this.availableInputs.includes(input) || this.availableApps.includes(input)) { // ****** The this keyword points to property's parent (tv) ***********
       console.log("[Before]", this.activeTvSource);
       console.log(`Changing source to ${input}`);
@@ -67,6 +68,11 @@ var tv = {
 tv.adjustVolume(70); // adjust currentVolume to 70 (REMEMBER that adjustVolume is a property of tv)
 tv.adjustVolume(101); // adjust currentVolume to 101 wich is not within the 0 and 100 required in the if(volume...
 console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
+// tv.changeInput("pc"); // Does not exist due to lowerCaps (remember tv. first)
+// tv.changeInput("TV"); // Does exist (remember tv. first)
+// tv.changeApps("Youtube"); // Does not exist due to lowerCaps (remember tv. first)
+// tv.changeApps("YouTube"); // Does exist (remember tv. first)
+// tv.changeApps("HBO Max"); // Does exist (remember tv. first)
 tv.changeSource("HBO Max"); // Does exist (remember tv. first)
 tv.power(); // Get power state and switch to correct power button color and TV image
 
@@ -95,9 +101,8 @@ console.log(allButtons);
 
 // MAKE FUNCTION TO RESET ALL BUTTON BACKGROUNDS
 function resetButtonBackgroundColor() {
-allButtons.forEach((button) => {
+allButtons.forEach(button => {
   button.style.backgroundColor = "#222";
   button.style.color = "#FFF";
 });
-powerButton.style.backgroundColor = "green";
 }

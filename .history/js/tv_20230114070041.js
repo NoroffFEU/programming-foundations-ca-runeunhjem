@@ -67,6 +67,7 @@ var tv = {
 tv.adjustVolume(70); // adjust currentVolume to 70 (REMEMBER that adjustVolume is a property of tv)
 tv.adjustVolume(101); // adjust currentVolume to 101 wich is not within the 0 and 100 required in the if(volume...
 console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
+
 tv.changeSource("HBO Max"); // Does exist (remember tv. first)
 tv.power(); // Get power state and switch to correct power button color and TV image
 
@@ -95,9 +96,8 @@ console.log(allButtons);
 
 // MAKE FUNCTION TO RESET ALL BUTTON BACKGROUNDS
 function resetButtonBackgroundColor() {
-allButtons.forEach((button) => {
+allButtons.forEach(button => {
   button.style.backgroundColor = "#222";
   button.style.color = "#FFF";
 });
-powerButton.style.backgroundColor = "green";
 }
