@@ -11,7 +11,7 @@ var tv = {
   smartTv: true, // Boolean
   tvIsOn: true, // Boolean
   activeTvSource: "PC", // String
-  activeButton: "#pc",
+  activeButton: "#pc", 
   availableInputs: ["TV", "PC", "Playstation 5", "Chromecast"], // Array
   availableApps: [
     "Netflix",
@@ -35,29 +35,29 @@ var tv = {
     }
   }, // End of adjustVolume
 
-  // // ***** Function to change the active TV input: *****
-  // changeInput: function (input) { // Functions within an object are also called methods
-  //   // if (tv.availableInputs.includes(input)) { // ****** CAN BE WRITTEN AS tv.availableInputs.includes ***********
-  //   if (this.availableInputs.includes(input)) { // ****** The this keyword points to property's parent (tv) ***********
-  //     console.log(`Changing input to ${input}`);
-  //   } else {
-  //     console.log("This input does not exist on this TV");
-  //   }
-  // }, // End of changeInput
+  // ***** Function to change the active TV input: *****
+  changeInput: function (input) { // Functions within an object are also called methods
+    // if (tv.availableInputs.includes(input)) { // ****** CAN BE WRITTEN AS tv.availableInputs.includes ***********
+    if (this.availableInputs.includes(input)) { // ****** The this keyword points to property's parent (tv) ***********
+      console.log(`Changing input to ${input}`);
+    } else {
+      console.log("This input does not exist on this TV");
+    }
+  }, // End of changeInput
 
-  // // ***** Function to switch to built inn app in the TV: *****
-  // changeApps: function (apps) { // Functions within an object are also called methods
-  //   // if (tv.availableApps.includes(apps)) { // ****** CAN BE WRITTEN AS tv.availableApps.includes ***********
-  //   if (this.availableApps.includes(apps)) { // ****** The this keyword points to property's parent (tv)  ***********
-  //     console.log(`Switching to the ${apps} App`);
-  //   } else {
-  //     console.log(
-  //       "This app is not installed on this TV. Please download and install to use it"
-  //     );
-  //   }
-  // }, // End of changeApps 
+  // ***** Function to switch to built inn app in the TV: *****
+  changeApps: function (apps) { // Functions within an object are also called methods
+    // if (tv.availableApps.includes(apps)) { // ****** CAN BE WRITTEN AS tv.availableApps.includes ***********
+    if (this.availableApps.includes(apps)) { // ****** The this keyword points to property's parent (tv)  ***********
+      console.log(`Switching to the ${apps} App`);
+    } else {
+      console.log(
+        "This app is not installed on this TV. Please download and install to use it"
+      );
+    }
+  }, // End of changeApps 
 
-  // ***** Function to switch TV on or off
+  ***** Function to switch TV on or off
   power: function () {
     if(this.tvIsOn === true) {
       console.log("The TV is on");
@@ -98,33 +98,3 @@ console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
 tv.changeSource("HBO Max"); // Does exist (remember tv. first)
 tv.power(); // Get power state and switch to correct power button color and TV image
 
-// *******************************************
-
-// MAKE ARRAY OF ALL BUTTONS:
-var allButtons = [
-  tvButton,
-  pcButton,
-  ps5Button,
-  chromecastButton,
-  netflixButton,
-  disneyButton,
-  viaplayButton,
-  hboButton,
-  discoveryButton,
-  tv2Button,
-  youtubeButton,
-  spotifyButton,
-  powerButton,
-  volUpButton,
-  volDownButton,
-  hdrButton
-];
-console.log(allButtons);
-
-// MAKE FUNCTION TO RESET ALL BUTTON BACKGROUNDS
-function resetButtonBackgroundColor() {
-allButtons.forEach(button => {
-  button.style.backgroundColor = "#222";
-  button.style.color = "#FFF";
-});
-}
