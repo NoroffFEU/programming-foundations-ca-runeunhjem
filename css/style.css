@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap");
 :root {
   --btn-clr__inactive: #222;
   --btn-clr-active: #cdcdcd;
@@ -49,14 +50,12 @@ header span {
 }
 
 .tv__inside {
-  position: contain;
   background-color: darkgrey;
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
   align-items: center;
-  font-family: "Robotic", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
@@ -65,7 +64,7 @@ header span {
 .active-logo {
   display: flex;
   justify-content: right;
-  height: 30px;
+  height: 20px;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -80,6 +79,7 @@ button {
   border-color: grey;
   background-color: var(--btn-clr__inactive);
   color: var(--btn-txt-clr__inactive);
+  font-family: "Rubik", sans-serif;
 }
 
 .remote {
