@@ -116,7 +116,7 @@ disneyButton.onclick = function () {
   tv__inside.style.backgroundColor = "#FFD9D9";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "Disney+";
-  activeLogo.innerHTML = `<img src="images/disney+_logo.svg" alt="Aktiv Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/netflix-logo_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Disney";
   console.log("After ===>", tv.activeTvSource);
