@@ -104,7 +104,7 @@ chromecastButton.onclick = function () {
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FA5640";
-  tv__inside.style.color = "#000";
+  tv__inside.style.color = "#";
   tv__inside.innerHTML = "Chromecast";
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Chromecast";
