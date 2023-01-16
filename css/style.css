@@ -56,9 +56,13 @@ header span {
   font-style: italic;
 }
 
-iframe {
-  height: 100%;
-  width: 100%;
+.active-logo {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 60px;
+  left: 315px;
 }
 
 button {
