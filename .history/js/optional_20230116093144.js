@@ -63,6 +63,8 @@ powerButton.onclick = function alternatePower() {
 // console.log(allButtons);
 
 // // MAKE FUNCTION TO RESET ALL BUTTON BACKGROUNDS
+
+
 function resetButtonBackgroundColor() {
   allButtons.forEach(button => {
     button.style.backgroundColor = "#222";
