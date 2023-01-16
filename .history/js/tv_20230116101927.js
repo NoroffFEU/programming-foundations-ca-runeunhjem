@@ -98,8 +98,8 @@ function resetButtonBackgroundColor() {
 allButtons.forEach((button) => {
   button.style.backgroundColor = "#222";
   button.style.color = "#FFF";
-  tv__inside.style.backgroundColor = "darkgrey";
-  tv__inside.innerHTML = "What do you want to watch?";
+  tv__inside.style.backgroundColor = "#darkgrey";
+  tv__inside.innerHTML = "";
 });
 powerButton.style.backgroundColor = "green";
 }

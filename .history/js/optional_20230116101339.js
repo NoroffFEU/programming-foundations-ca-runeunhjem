@@ -63,14 +63,18 @@ powerButton.onclick = function alternatePower() {
 // console.log(allButtons);
 
 // // MAKE FUNCTION TO RESET ALL BUTTON BACKGROUNDS
-
+function resetButtonBackgroundColor() {
+  allButtons.forEach(button => {
+    button.style.backgroundColor = "#222";
+    tv__inside.innerHTML = "initial";
+  });
+  }
 
 tvButton.onclick = function () {
   resetButtonBackgroundColor();
   tvButton.style.backgroundColor = "#CDCDCD";
   tvButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#2991F1";
-  tv__inside.style.color = "#FFF";
   tv__inside.innerHTML = "NRK 1";
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "TV";
@@ -81,9 +85,6 @@ pcButton.onclick = function () {
   resetButtonBackgroundColor();
   pcButton.style.backgroundColor = "#CDCDCD";
   pcButton.style.color = "#000";
-  tv__inside.style.backgroundColor = "#F1D129";
-  tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "PC";
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "PC";
   console.log("After ===>", tv.activeTvSource);
@@ -92,9 +93,6 @@ ps5Button.onclick = function () {
   resetButtonBackgroundColor();
   ps5Button.style.backgroundColor = "#CDCDCD";
   ps5Button.style.color = "#000";
-  tv__inside.style.backgroundColor = "#2D4A84";
-  tv__inside.style.color = "#FFF";
-  tv__inside.innerHTML = "Playstation 5";
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Playstation 5";
   console.log("After ===>", tv.activeTvSource);
@@ -103,9 +101,6 @@ chromecastButton.onclick = function () {
   resetButtonBackgroundColor();
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
-  tv__inside.style.backgroundColor = "#FA5640";
-  tv__inside.style.color = "white";
-  tv__inside.innerHTML = "Chromecast";
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Chromecast";
   console.log("After ===>", tv.activeTvSource);

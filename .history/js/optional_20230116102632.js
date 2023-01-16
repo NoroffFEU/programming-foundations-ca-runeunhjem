@@ -70,7 +70,6 @@ tvButton.onclick = function () {
   tvButton.style.backgroundColor = "#CDCDCD";
   tvButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#2991F1";
-  tv__inside.style.color = "#FFF";
   tv__inside.innerHTML = "NRK 1";
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "TV";
@@ -104,7 +103,6 @@ chromecastButton.onclick = function () {
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FA5640";
-  tv__inside.style.color = "white";
   tv__inside.innerHTML = "Chromecast";
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Chromecast";
