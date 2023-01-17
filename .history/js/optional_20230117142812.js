@@ -22,7 +22,7 @@ var hdrButton = document.querySelector("#hdr");
 var tv__inside = document.querySelector(".tv__inside");
 var activeLogo = document.querySelector("#active-logo");
 var tv__frame = document.querySelector(".tv__frame");
-
+// var iframe = document.createElement("iframe");
 
 // ALTERNATE TV POWER ON/OFF
 powerButton.onclick = function alternatePower() {
@@ -244,7 +244,7 @@ youtubeButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
   var iframe = document.createElement("iframe");  
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/youtube-image.jpg);");
+  // document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/youtube-image.jpg);");
   youtubeButton.style.backgroundColor = "#CDCDCD";
   youtubeButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#1A3C5B";

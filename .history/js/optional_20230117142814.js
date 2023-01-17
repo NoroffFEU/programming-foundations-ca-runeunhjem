@@ -22,7 +22,7 @@ var hdrButton = document.querySelector("#hdr");
 var tv__inside = document.querySelector(".tv__inside");
 var activeLogo = document.querySelector("#active-logo");
 var tv__frame = document.querySelector(".tv__frame");
-
+// var iframe = document.createElement("iframe");
 
 // ALTERNATE TV POWER ON/OFF
 powerButton.onclick = function alternatePower() {

@@ -23,7 +23,6 @@ var tv__inside = document.querySelector(".tv__inside");
 var activeLogo = document.querySelector("#active-logo");
 var tv__frame = document.querySelector(".tv__frame");
 
-
 // ALTERNATE TV POWER ON/OFF
 powerButton.onclick = function alternatePower() {
   resetSourceBackground();
@@ -243,8 +242,8 @@ tv2Button.onclick = function () {
 youtubeButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  var iframe = document.createElement("iframe");  
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/youtube-image.jpg);");
+  // document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/youtube-image.jpg);");
+  document.getElementById("tv__inside").setAttribute("style","background-image: url(<iframe width="967" height="544" src="https://www.youtube.com/embed/mejqbQLLNz4" title="BEST UPCOMING MOVIES 2023 (Trailers)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>);");
   youtubeButton.style.backgroundColor = "#CDCDCD";
   youtubeButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#1A3C5B";
