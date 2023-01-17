@@ -37,6 +37,10 @@ header span {
   color: red;
 }
 
+.ca a {
+  display: block;
+}
+
 .tv__frame {
   margin: 5px;
   border: 4px solid #000;
