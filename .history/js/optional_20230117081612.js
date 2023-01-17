@@ -68,13 +68,12 @@ function adjustVolume(volume) {
     console.log(`Volume level is now set to ${volume}`);
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
     setTimeout(function () {
-      document.getElementById("show-console-log").innerHTML = "";
+      document.getElementById("show-console-log").innerHTML = ""`Volume level is now set to ${volume}`"";
     }, 5000);
   } else {
     console.log("Volume level is out of range and invalid");
-    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
     setTimeout(function () {
-    document.getElementById("show-console-log").innerHTML = "";
+    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
   }, 5000);}
 }
 

@@ -23,6 +23,7 @@ var tv__inside = document.querySelector(".tv__inside");
 var activeLogo = document.querySelector("#active-logo");
 var tv__frame = document.querySelector(".tv__frame");
 
+
 // ALTERNATE TV POWER ON/OFF
 powerButton.onclick = function alternatePower() {
   resetButtonBackgroundColor();
@@ -51,7 +52,7 @@ hdrButton.onclick = function alternateHdr() {
     tv.hdrIsOn = false;
     console.log(tv.hdrIsOn);
     hdrButton.style.backgroundColor = "red";
-    tv__frame.style.opacity = "80%";
+    tv__frame.style.opacity = "80%";    
   } else {
     console.log("HDR is off - Turning it on");
     tv.hdrIsOn = true;
@@ -66,16 +67,12 @@ function adjustVolume(volume) {
   if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
+    setTimeout(function() {
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
-    setTimeout(function () {
-      document.getElementById("show-console-log").innerHTML = "";
-    }, 5000);
-  } else {
+  }, 5000)} else {
     console.log("Volume level is out of range and invalid");
     document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
-    setTimeout(function () {
-    document.getElementById("show-console-log").innerHTML = "";
-  }, 5000);}
+  }
 }
 
 // SET PROPERTIES FOR EACH SOURCE BUTTON
@@ -86,8 +83,7 @@ tvButton.onclick = function () {
   tv__inside.style.backgroundColor = "#F17D29";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "NRK 1";
-  activeLogo.innerHTML =
-    '<img src="images/nrk-logo-vector.svg" alt="Aktiv Logo">';
+  activeLogo.innerHTML = '<img src="images/nrk-logo-vector.svg" alt="Aktiv Logo">';
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "TV";
   console.log("After ===>", tv.activeTvSource);

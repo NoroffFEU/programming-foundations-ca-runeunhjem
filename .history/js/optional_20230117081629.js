@@ -74,7 +74,7 @@ function adjustVolume(volume) {
     console.log("Volume level is out of range and invalid");
     document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
     setTimeout(function () {
-    document.getElementById("show-console-log").innerHTML = "";
+    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
   }, 5000);}
 }
 

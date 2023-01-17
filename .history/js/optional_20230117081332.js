@@ -66,16 +66,14 @@ function adjustVolume(volume) {
   if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
-    document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
     setTimeout(function () {
-      document.getElementById("show-console-log").innerHTML = "";
+      document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
     }, 5000);
   } else {
     console.log("Volume level is out of range and invalid");
-    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
     setTimeout(function () {
-    document.getElementById("show-console-log").innerHTML = "";
-  }, 5000);}
+    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
+  }
 }
 
 // SET PROPERTIES FOR EACH SOURCE BUTTON
