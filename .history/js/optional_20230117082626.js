@@ -110,7 +110,6 @@ pcButton.onclick = function () {
 
 ps5Button.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   ps5Button.style.backgroundColor = "#CDCDCD";
   ps5Button.style.color = "#000";
   tv__inside.style.backgroundColor = "#2D4A84";
@@ -124,7 +123,6 @@ ps5Button.onclick = function () {
 
 chromecastButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FA5640";
@@ -138,7 +136,6 @@ chromecastButton.onclick = function () {
 
 netflixButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   netflixButton.style.backgroundColor = "#CDCDCD";
   netflixButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FFD9D9";
@@ -152,7 +149,6 @@ netflixButton.onclick = function () {
 
 disneyButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   disneyButton.style.backgroundColor = "#CDCDCD";
   disneyButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#D9E6FF";
@@ -166,7 +162,6 @@ disneyButton.onclick = function () {
 
 viaplayButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   viaplayButton.style.backgroundColor = "#CDCDCD";
   viaplayButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FFFCED";
@@ -180,7 +175,6 @@ viaplayButton.onclick = function () {
 
 hboButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   hboButton.style.backgroundColor = "#CDCDCD";
   hboButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#C788F1";
@@ -194,7 +188,6 @@ hboButton.onclick = function () {
 
 discoveryButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   discoveryButton.style.backgroundColor = "#CDCDCD";
   discoveryButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FAA05F";
@@ -208,7 +201,6 @@ discoveryButton.onclick = function () {
 
 tv2Button.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   tv2Button.style.backgroundColor = "#CDCDCD";
   tv2Button.style.color = "#000";
   tv__inside.style.backgroundColor = "#5D29F1";
@@ -222,7 +214,6 @@ tv2Button.onclick = function () {
 
 youtubeButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   youtubeButton.style.backgroundColor = "#CDCDCD";
   youtubeButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#1A3C5B";
@@ -236,7 +227,6 @@ youtubeButton.onclick = function () {
 
 spotifyButton.onclick = function () {
   resetButtonBackgroundColor();
-  tv.tvIsOn = true;
   spotifyButton.style.backgroundColor = "#CDCDCD";
   spotifyButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#067A0A";
