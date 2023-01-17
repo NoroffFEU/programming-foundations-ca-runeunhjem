@@ -73,10 +73,8 @@ function adjustVolume(volume) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
-    document.getElementById("show-console-log").style.backgroundColor = "#2227";
     setTimeout(() => { // Testing with arrow function
       document.getElementById("show-console-log").innerHTML = "";
-      document.getElementById("show-console-log").style.backgroundColor = "#2220";
     }, 5000);
   } else {
     console.log("Volume level is out of range and invalid");
@@ -166,12 +164,12 @@ netflixButton.onclick = function () {
 disneyButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/disney-image.jpg);");
+  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/netflix-image.jpg);");
   disneyButton.style.backgroundColor = "#CDCDCD";
   disneyButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#D9E6FF";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Disney+";
   activeLogo.innerHTML = `<img src="images/disney+_logo.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Disney";
@@ -181,12 +179,12 @@ disneyButton.onclick = function () {
 viaplayButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/viaplay-image.jpg);");
+  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/netflix-image.jpg);");
   viaplayButton.style.backgroundColor = "#CDCDCD";
   viaplayButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FFFCED";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Viaplay";
   activeLogo.innerHTML = `<img src="images/viaplay_logo.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Viaplay";
@@ -196,13 +194,12 @@ viaplayButton.onclick = function () {
 hboButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/hbo-image.jpg);");
   hboButton.style.backgroundColor = "#CDCDCD";
   hboButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#C788F1";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/hbo-logo-wht.svg" alt="Aktiv Logo"></div>`;
+  tv__inside.innerHTML = "HBO Max";
+  activeLogo.innerHTML = `<img src="images/HBO_logo.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "HBO Max";
   console.log("After ===>", tv.activeTvSource);
@@ -211,12 +208,11 @@ hboButton.onclick = function () {
 discoveryButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/discovery-image.jpg);");
   discoveryButton.style.backgroundColor = "#CDCDCD";
   discoveryButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FAA05F";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "discovery+";
   activeLogo.innerHTML = `<img src="images/Discovery_plus_ico.svg" alt="Active Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "discovery+";
@@ -226,12 +222,11 @@ discoveryButton.onclick = function () {
 tv2Button.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/tv2-image.jpg);");
   tv2Button.style.backgroundColor = "#CDCDCD";
   tv2Button.style.color = "#000";
   tv__inside.style.backgroundColor = "#5D29F1";
   tv__inside.style.color = "#FFF";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "TV2 Play";
   activeLogo.innerHTML = `<img src="images/TV2-white-2021.svg" alt="Active Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "TV2 Play";
@@ -241,12 +236,11 @@ tv2Button.onclick = function () {
 youtubeButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/youtube-image.jpg);");
   youtubeButton.style.backgroundColor = "#CDCDCD";
   youtubeButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#1A3C5B";
   tv__inside.style.color = "#FFF";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "YouTube";
   activeLogo.innerHTML = `<img src="images/YouTube_dark_logo_2017.svg" alt="Active Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "YouTube";
@@ -256,12 +250,11 @@ youtubeButton.onclick = function () {
 spotifyButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/spotify-image.jpg);");
   spotifyButton.style.backgroundColor = "#CDCDCD";
   spotifyButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#067A0A";
   tv__inside.style.color = "#FFF";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Spotify";
   activeLogo.innerHTML = `<img src="images/Spotify_icon.svg" alt="Active Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Spotify";

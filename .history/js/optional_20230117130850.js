@@ -73,10 +73,8 @@ function adjustVolume(volume) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
-    document.getElementById("show-console-log").style.backgroundColor = "#2227";
     setTimeout(() => { // Testing with arrow function
       document.getElementById("show-console-log").innerHTML = "";
-      document.getElementById("show-console-log").style.backgroundColor = "#2220";
     }, 5000);
   } else {
     console.log("Volume level is out of range and invalid");
@@ -247,7 +245,7 @@ youtubeButton.onclick = function () {
   tv__inside.style.backgroundColor = "#1A3C5B";
   tv__inside.style.color = "#FFF";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/YouTube_dark_logo_2017.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/YouTube_light_logo_2017.svg" alt="Active Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "YouTube";
   console.log("After ===>", tv.activeTvSource);

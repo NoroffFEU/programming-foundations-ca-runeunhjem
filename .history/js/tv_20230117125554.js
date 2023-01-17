@@ -113,9 +113,9 @@ function resetButtonBackgroundColor() {
     button.style.color = "#FFF";    
   });
   powerButton.style.backgroundColor = "green";
-  // if(powerButton.style.backgroundColor === "red") {
-  //   hdrButton.style.backgroundColor = "#222";
-  // } else 
+  if(powerButton.style.backgroundColor === "red") {
+    hdrButton.style.backgroundColor = "#222";
+  } else 
   if(tv.hdrIsOn) {
     hdrButton.style.backgroundColor = "green";
   } else {

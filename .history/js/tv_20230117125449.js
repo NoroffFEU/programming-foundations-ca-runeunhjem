@@ -110,7 +110,9 @@ function resetButtonBackgroundColor() {
   
   allButtons.forEach((button) => {
     button.style.backgroundColor = "#222";
-    button.style.color = "#FFF";    
+    button.style.color = "#FFF";
+    
+    
   });
   powerButton.style.backgroundColor = "green";
   // if(powerButton.style.backgroundColor === "red") {

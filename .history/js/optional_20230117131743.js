@@ -73,10 +73,9 @@ function adjustVolume(volume) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
-    document.getElementById("show-console-log").style.backgroundColor = "#2227";
+    document.getElementById("show-console-log").style.backgroundColor = "#"
     setTimeout(() => { // Testing with arrow function
       document.getElementById("show-console-log").innerHTML = "";
-      document.getElementById("show-console-log").style.backgroundColor = "#2220";
     }, 5000);
   } else {
     console.log("Volume level is out of range and invalid");
