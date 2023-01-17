@@ -66,19 +66,19 @@ hdrButton.onclick = function alternateHdr() {
 
 // FUNCTION TO ADJUST VOLUME FROM REMOTE AND SEE IT ON TV
 function adjustVolume(volume) {
-  if(!tv.tvIsOn) { // VOLUME should not work when TV is powered off
+  if(!tv.tvIsOn) {
     console.log("Turn on the TV first");
   } else if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
-    setTimeout(() => { // Testing with arrow function
+    setTimeout(() => { // Testing with arrow function - 
       document.getElementById("show-console-log").innerHTML = "";
     }, 5000);
   } else {
     console.log("Volume level is out of range and invalid");
     document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
-    setTimeout(function () { // SAME as arrow function in setTimeout over here
+    setTimeout(function () {
     document.getElementById("show-console-log").innerHTML = "";
   }, 5000);}
 }

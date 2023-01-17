@@ -66,7 +66,7 @@ hdrButton.onclick = function alternateHdr() {
 
 // FUNCTION TO ADJUST VOLUME FROM REMOTE AND SEE IT ON TV
 function adjustVolume(volume) {
-  if(!tv.tvIsOn) { // VOLUME should not work when TV is powered off
+  if(!tv.tvIsOn) { // VOLUME should not work when t
     console.log("Turn on the TV first");
   } else if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
