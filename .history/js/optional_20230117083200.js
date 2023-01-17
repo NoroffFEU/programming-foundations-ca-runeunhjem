@@ -65,7 +65,8 @@ hdrButton.onclick = function alternateHdr() {
 function adjustVolume(volume) {
   if(!tv.tvIsOn) {
     console.log("Turn on the TV first");
-  } else if (volume >= 0 && volume <= 100) {
+  } 
+  if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
