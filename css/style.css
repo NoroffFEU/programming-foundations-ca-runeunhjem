@@ -70,6 +70,26 @@ header span {
   right: 5px;
 }
 
+#volume-control {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+  justify-items: center;
+  align-items: flex-end;
+}
+#volume-control label {
+  display: block;
+  text-align: center;
+  color: #FFF;
+  padding: 5px;
+}
+
+#volume-slider {
+  flex-grow: 1;
+  width: 200px;
+}
+
 button {
   width: 82px;
   font-size: 0.7rem;
