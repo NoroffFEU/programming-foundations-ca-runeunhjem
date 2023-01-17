@@ -100,11 +100,7 @@ var allButtons = [
 console.log(allButtons);
 
 // MAKE RESET FUNCTION
-function resetSourceBackground() {
-document.getElementById("tv__inside").setAttribute("style","background-image: url();");
-activeLogo.innerHTML = `<img src="images/input_icon.svg" alt="Aktiv Logo"></div>`;
-}
-
+function
 
 function resetButtonBackgroundColor() {
   
@@ -113,7 +109,7 @@ function resetButtonBackgroundColor() {
     button.style.color = "#FFF";
     // tv__inside.style.backgroundColor = "darkgrey";
     // tv__inside.innerHTML = "What do you want to watch?";
-    
+    activeLogo.innerHTML = `<img src="images/input_icon.svg" alt="Aktiv Logo"></div>`;
   });
   powerButton.style.backgroundColor = "green";
   // if(powerButton.style.backgroundColor === "red") {

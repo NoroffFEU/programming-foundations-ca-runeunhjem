@@ -102,7 +102,7 @@ console.log(allButtons);
 // MAKE RESET FUNCTION
 function resetSourceBackground() {
 document.getElementById("tv__inside").setAttribute("style","background-image: url();");
-activeLogo.innerHTML = `<img src="images/input_icon.svg" alt="Aktiv Logo"></div>`;
+// activeLogo.innerHTML = `<img src="images/input_icon.svg" alt="Aktiv Logo"></div>`;
 }
 
 

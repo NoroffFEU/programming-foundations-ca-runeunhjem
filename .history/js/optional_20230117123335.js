@@ -25,7 +25,7 @@ var tv__frame = document.querySelector(".tv__frame");
 
 // ALTERNATE TV POWER ON/OFF
 powerButton.onclick = function alternatePower() {
-  resetSourceBackground();
+  
   resetButtonBackgroundColor();
   if (tv.tvIsOn === true) {
     console.log("The TV is on - Turning it off");
