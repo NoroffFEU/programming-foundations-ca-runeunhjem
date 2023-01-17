@@ -99,7 +99,7 @@ tvButton.onclick = function () {
   tv__inside.style.backgroundColor = "#F17D29";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML ='<img src="images/nrk-logo-vector.svg" alt="Active Logo">';
+  activeLogo.innerHTML ='<img src="images/nrk-logo-vector.svg" alt="Aktiv Logo">';
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "TV";
   console.log("After ===>", tv.activeTvSource);
@@ -114,7 +114,7 @@ pcButton.onclick = function () {
   tv__inside.style.backgroundColor = "#F1D129";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/laptop_icon.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/laptop_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "PC";
   console.log("After ===>", tv.activeTvSource);
@@ -129,7 +129,7 @@ ps5Button.onclick = function () {
   tv__inside.style.backgroundColor = "#2D4A84";
   tv__inside.style.color = "#FFF";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/ps-white_icon.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/ps-white_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Playstation 5";
   console.log("After ===>", tv.activeTvSource);
@@ -144,7 +144,7 @@ chromecastButton.onclick = function () {
   tv__inside.style.backgroundColor = "#FA5640";
   tv__inside.style.color = "#FFF";
   tv__inside.innerHTML = "Start casting";
-  activeLogo.innerHTML = `<img src="images/chromecast_icon.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/chromecast_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Chromecast";
   console.log("After ===>", tv.activeTvSource);
@@ -159,7 +159,7 @@ netflixButton.onclick = function () {
   tv__inside.style.backgroundColor = "#FFD9D9";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "";  
-  activeLogo.innerHTML = `<img src="images/netflix-logo_icon.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/netflix-logo_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Netflix";
   console.log("After ===>", tv.activeTvSource);
@@ -174,7 +174,7 @@ disneyButton.onclick = function () {
   tv__inside.style.backgroundColor = "#D9E6FF";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/disney+_logo.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/disney+_logo.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Disney";
   console.log("After ===>", tv.activeTvSource);
@@ -189,7 +189,7 @@ viaplayButton.onclick = function () {
   tv__inside.style.backgroundColor = "#FFFCED";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/viaplay_logo.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/viaplay_logo.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Viaplay";
   console.log("After ===>", tv.activeTvSource);
@@ -204,7 +204,7 @@ hboButton.onclick = function () {
   tv__inside.style.backgroundColor = "#C788F1";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/hbo-logo-wht.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/hbo-logo-wht.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "HBO Max";
   console.log("After ===>", tv.activeTvSource);

@@ -204,7 +204,7 @@ hboButton.onclick = function () {
   tv__inside.style.backgroundColor = "#C788F1";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "";
-  activeLogo.innerHTML = `<img src="images/hbo-logo-wht.svg" alt="Active Logo"></div>`;
+  activeLogo.innerHTML = `<img src="images/hbo-logo-wht.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "HBO Max";
   console.log("After ===>", tv.activeTvSource);
