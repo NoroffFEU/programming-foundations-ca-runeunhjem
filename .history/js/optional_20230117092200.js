@@ -71,7 +71,7 @@ function adjustVolume(volume) {
   } else if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
-    document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
+    document.getElementById("show-console-log").inner = `Volume level is now set to ${volume}`;
     setTimeout(() => { // Testing with arrow function
       document.getElementById("show-console-log").innerHTML = "";
     }, 5000);
@@ -87,12 +87,11 @@ function adjustVolume(volume) {
 tvButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/nrk-image.jpg);");
   tvButton.style.backgroundColor = "#CDCDCD";
   tvButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#F17D29";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "NRK 1";
   activeLogo.innerHTML =
     '<img src="images/nrk-logo-vector.svg" alt="Aktiv Logo">';
   console.log("Before ===>", tv.activeTvSource);
@@ -103,12 +102,11 @@ tvButton.onclick = function () {
 pcButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/pc-image.jpg);");
   pcButton.style.backgroundColor = "#CDCDCD";
   pcButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#F1D129";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "PC";
   activeLogo.innerHTML = `<img src="images/laptop_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "PC";
@@ -118,12 +116,11 @@ pcButton.onclick = function () {
 ps5Button.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/ps5-image.jpg);");
   ps5Button.style.backgroundColor = "#CDCDCD";
   ps5Button.style.color = "#000";
   tv__inside.style.backgroundColor = "#2D4A84";
   tv__inside.style.color = "#FFF";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Playstation 5";
   activeLogo.innerHTML = `<img src="images/ps-white_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Playstation 5";
@@ -133,12 +130,11 @@ ps5Button.onclick = function () {
 chromecastButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/chromecast-image.jpg);");
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FA5640";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Chromecast";
   activeLogo.innerHTML = `<img src="images/chromecast_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Chromecast";

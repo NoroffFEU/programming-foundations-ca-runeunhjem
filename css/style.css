@@ -51,6 +51,7 @@ header span {
 
 .tv__inside {
   background-color: darkgrey;
+  background-size: 100%;
   display: flex;
   justify-content: center;
   height: 100%;

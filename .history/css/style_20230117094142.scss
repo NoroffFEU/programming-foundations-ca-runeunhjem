@@ -50,10 +50,6 @@ header {
 }
 .tv__inside {  
   background-color: darkgrey;
-  // background-image: url(../images/tvbg/nrk-image.jpg);
-  background-size: 100%;
-  // height: calc(2160px / 11);
-  // width: calc(3840px / 11);
   display: flex;
   justify-content: center;
   height: 100%;
@@ -80,6 +76,7 @@ header {
   text-align: center;
   color: #FFF;
   padding: 5px;
+  background-image: ;
 }
 #volume-control {
   label {

@@ -123,7 +123,7 @@ ps5Button.onclick = function () {
   ps5Button.style.color = "#000";
   tv__inside.style.backgroundColor = "#2D4A84";
   tv__inside.style.color = "#FFF";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Playstation 5";
   activeLogo.innerHTML = `<img src="images/ps-white_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Playstation 5";
@@ -133,12 +133,11 @@ ps5Button.onclick = function () {
 chromecastButton.onclick = function () {
   resetButtonBackgroundColor();
   tv.tvIsOn = true;
-  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/chromecast-image.jpg);");
   chromecastButton.style.backgroundColor = "#CDCDCD";
   chromecastButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FA5640";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Chromecast";
   activeLogo.innerHTML = `<img src="images/chromecast_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Chromecast";

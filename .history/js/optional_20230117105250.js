@@ -138,7 +138,7 @@ chromecastButton.onclick = function () {
   chromecastButton.style.color = "#000";
   tv__inside.style.backgroundColor = "#FA5640";
   tv__inside.style.color = "#000";
-  tv__inside.innerHTML = "";
+  tv__inside.innerHTML = "Chromecast";
   activeLogo.innerHTML = `<img src="images/chromecast_icon.svg" alt="Aktiv Logo"></div>`;
   console.log("Before ===>", tv.activeTvSource);
   tv.activeTvSource = "Chromecast";
