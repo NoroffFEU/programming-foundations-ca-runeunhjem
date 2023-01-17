@@ -45,7 +45,7 @@ powerButton.onclick = function alternatePower() {
 };
 
 // ALTERNATE TV HDR ON/OFF
-
+alternateHdr
 hdrButton.onclick = function alternateHdr() {
   resetButtonBackgroundColor();
   if(!tv.tvIsOn) {

@@ -75,7 +75,7 @@ tv.adjustVolume(101); // adjust currentVolume to 101 wich is not within the 0 an
 console.log("Doublecheck", tv.currentVolume); // Doublecheck currentVolume
 tv.changeSource("HBO Max"); // Does exist (remember tv. first)
 tv.power(); // Get power state and switch to correct power button color and TV image
-hdrButton.style.backgroundColor = "green";
+hdrIsOn === true;
 // *******************************************
 
 // MAKE ARRAY OF ALL BUTTONS:

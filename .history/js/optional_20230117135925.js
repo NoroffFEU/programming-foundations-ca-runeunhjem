@@ -65,7 +65,7 @@ hdrButton.onclick = function alternateHdr() {
     tv__frame.style.opacity = "100%";
   }
 };
-
+alternateHdr();
 // FUNCTION TO ADJUST VOLUME FROM REMOTE AND SEE IT ON TV
 function adjustVolume(volume) {
   if(!tv.tvIsOn) { // VOLUME should not work when TV is powered off
