@@ -101,7 +101,7 @@ console.log(allButtons);
 
 // MAKE RESET FUNCTION
 function resetButtonBackgroundColor() {
-  document.getElementById("tv__inside").setAttribute("style","background-image: url();");
+  
   allButtons.forEach((button) => {
     button.style.backgroundColor = "#222";
     button.style.color = "#FFF";

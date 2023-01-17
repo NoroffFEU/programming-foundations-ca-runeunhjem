@@ -101,7 +101,7 @@ console.log(allButtons);
 
 // MAKE RESET FUNCTION
 function resetButtonBackgroundColor() {
-  document.getElementById("tv__inside").setAttribute("style","background-image: url();");
+  document.getElementById("tv__inside").setAttribute("style","background-image: url(../images/tvbg/chromecast-image.jpg);");
   allButtons.forEach((button) => {
     button.style.backgroundColor = "#222";
     button.style.color = "#FFF";
