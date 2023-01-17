@@ -67,10 +67,9 @@ function adjustVolume(volume) {
   if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
     console.log(`Volume level is now set to ${volume}`);
-    document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
+    document.getElementById("show-console-log).innerHTML = ``;
   } else {
     console.log("Volume level is out of range and invalid");
-    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
   }
 }
 

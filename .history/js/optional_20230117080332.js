@@ -70,7 +70,7 @@ function adjustVolume(volume) {
     document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
   } else {
     console.log("Volume level is out of range and invalid");
-    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
+    document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
   }
 }
 

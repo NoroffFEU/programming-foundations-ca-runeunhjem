@@ -66,11 +66,9 @@ hdrButton.onclick = function alternateHdr() {
 function adjustVolume(volume) {
   if (volume >= 0 && volume <= 100) {
     currentVolume = volume; // Update current volume
-    console.log(`Volume level is now set to ${volume}`);
-    document.getElementById("show-console-log").innerHTML = `Volume level is now set to ${volume}`;
+    console.log(`Volume level is now set to ${volume}`);    
   } else {
     console.log("Volume level is out of range and invalid");
-    document.getElementById("show-console-log").innerHTML = "Volume level is out of range and invalid";
   }
 }
 
@@ -79,7 +77,7 @@ tvButton.onclick = function () {
   resetButtonBackgroundColor();
   tvButton.style.backgroundColor = "#CDCDCD";
   tvButton.style.color = "#000";
-  tv__inside.style.backgroundColor = "#F17D29";
+  tv__inside.style.backgroundColor = "#11254D";
   tv__inside.style.color = "#000";
   tv__inside.innerHTML = "NRK 1";
   activeLogo.innerHTML = '<img src="images/nrk-logo-vector.svg" alt="Aktiv Logo">';
