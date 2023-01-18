@@ -3,17 +3,13 @@
 var tv = {
   // Using var as that is the one used in the modules
   // The real life object's properties:
-    brand: { // Nested Object
-      shortName: "Samsung", // String
-      fullName: "Samsung Electronics", // String
-        hq: { // Nested Object
-          officePark: "Samsung Digital City",
-          city: "Suwon", 
-          country: "South Korea", // String
-        },
-      employeesWorldWide: 300000, // Number      
-      founded: 1969, // Number      
-    },
+  brand: { // Nested Object
+    shortName: "Samsung", // String
+    fullName: "Samsung Electronics", // String
+    ownedBy: "Samsung Group", // String
+    founded: 1938, // Number
+    founder: "Lee Byung-chul", 
+  },
   displayType: "QLED", // String
   screenSize: 65, // Number
   resolution: "4K", // String

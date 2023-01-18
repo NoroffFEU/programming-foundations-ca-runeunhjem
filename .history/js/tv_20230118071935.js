@@ -6,13 +6,15 @@ var tv = {
     brand: { // Nested Object
       shortName: "Samsung", // String
       fullName: "Samsung Electronics", // String
-        hq: { // Nested Object
-          officePark: "Samsung Digital City",
-          city: "Suwon", 
-          country: "South Korea", // String
-        },
-      employeesWorldWide: 300000, // Number      
-      founded: 1969, // Number      
+      hq: { // Nested Object
+        officePark: "Samsung Digital City",
+        city: "Suwon", 
+        country: "South Korea", // String
+      },
+      employeesWorldWide: 300000, // Number
+      ownedBy: "Samsung Group", // String
+      founded: 1969, // Number
+      founder: "Lee Byung-chul", // String
     },
   displayType: "QLED", // String
   screenSize: 65, // Number

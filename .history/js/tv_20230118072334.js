@@ -12,7 +12,9 @@ var tv = {
           country: "South Korea", // String
         },
       employeesWorldWide: 300000, // Number      
-      founded: 1969, // Number      
+      founded: 1969, // Number
+      ownedBy: "Samsung Group", // String
+      founder: "Lee Byung-chul", // String
     },
   displayType: "QLED", // String
   screenSize: 65, // Number
