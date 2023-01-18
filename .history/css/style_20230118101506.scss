@@ -24,14 +24,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
+  width: 100%;
   h1 {
     margin: 5px;
   }
   a {
     font-size: 0.8rem;
     text-decoration: none;
-    text-align: right;
   }
   span {
     font-style: italic;
