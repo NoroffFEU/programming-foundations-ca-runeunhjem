@@ -46,7 +46,8 @@ powerButton.onclick = function alternatePower() {
 
 // ALTERNATE TV HDR ON/OFF
 
-hdrButton.onclick = function alternateHdr() {  
+hdrButton.onclick = function alternateHdr() {
+  
   if (!tv.tvIsOn) {
     powerButton.style.backgroundColor = "red";
     console.log("Turn on the TV first");
