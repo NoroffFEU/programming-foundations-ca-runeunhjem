@@ -1,0 +1,139 @@
+:root {
+  --btn-clr__inactive: #222;
+  --btn-clr-active: #cdcdcd;
+  --btn-txt-clr__inactive: #fff;
+  --btn-txt-clr__active: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: block;
+  font-size: 16px;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+header h1 {
+  margin: 5px;
+}
+header a {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+header span {
+  font-style: italic;
+  text-decoration: underline;
+  color: red;
+}
+
+.tv__frame {
+  margin: 5px;
+  border: 4px solid #000;
+  border-radius: 0.2em;
+  height: 196.3636363636px;
+  width: 349.0909090909px;
+}
+
+.tv__frame {
+  position: relative;
+}
+
+.tv__inside {
+  background-color: darkgrey;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  font-family: "Robotic", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.active-logo {
+  display: flex;
+  justify-content: right;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+button {
+  width: 82px;
+  font-size: 0.7rem;
+  padding: 5px;
+  border-radius: 1em;
+  border: 1px solid;
+  border-color: grey;
+  background-color: var(--btn-clr__inactive);
+  color: var(--btn-txt-clr__inactive);
+}
+
+.remote {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  border-radius: 0.5em;
+  background-color: #000;
+  margin: 0 5px;
+  width: 349.0909090909px;
+  color: var(--btn-txt-clr__inactive);
+}
+.remote h2 {
+  padding: 0.5em;
+  border-bottom: 1px solid red;
+  margin-bottom: 1em;
+}
+
+hr {
+  height: 1px;
+  border-color: green;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.tv__controls,
+.apps__row1,
+.apps__row2,
+.tv__inputs {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  gap: 4px;
+  padding: 0.5em 0;
+}
+
+.apps__row1,
+.tv__controls {
+  margin-top: 1em;
+}
+
+.tv__controls,
+.apps__row2,
+.tv__inputs {
+  margin-bottom: 1em;
+}
+
+.logo {
+  height: 30px;
+  width: 90px;
+  background-image: url(../images/Samsung_Logo.svg);
+  background-size: cover;
+}/*# sourceMappingURL=style_20230116134527.css.map */
