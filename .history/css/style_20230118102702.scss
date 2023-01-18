@@ -16,7 +16,7 @@
 body {
   width: 100vw;
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   padding: 0;
 }
 
@@ -25,25 +25,34 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 350px;
-  height: 46px;
-  .heading, .ca {    
-    display: flex;
-    flex-direction: column;
-    gap: 0.4em;    
-  }
+  height: 40px;
   h1 {
-    margin-left: 8px;
+    margin: 5px;
   }
-  a {
-    display: flex;
-    flex-direction: column;    
+  a {display: flex;
+    
+    height: 100%;
     font-size: 0.8rem;
     text-decoration: none;
-    text-align: right; 
-  }  
+    text-align: right;
+    .cajs {
+      align-items: flex-start;
+    }
+    .readme {
+      align-items: flex-end;
+    }
+  }
+  span {
+    font-style: italic;
+    text-decoration: underline;
+    color: red;
+  }
 }
-
-
+.ca {
+  a {
+    display: block;
+  }
+}
 .tv__frame {
   margin: 5px;
   border: 4px solid #000;
@@ -167,7 +176,6 @@ hr {
 }
 
 .logo {
-  // margin-top: 1em;
   height: 30px;
   width: 90px;
   background-image: url(../images/Samsung_Logo.svg);

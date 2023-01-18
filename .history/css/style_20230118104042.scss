@@ -16,31 +16,42 @@
 body {
   width: 100vw;
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   padding: 0;
 }
+
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 350px;
-  height: 46px;
-  .heading, .ca {    
-    display: flex;
-    flex-direction: column;
-    gap: 0.4em;    
-  }
+  height: 80px;
   h1 {
-    margin-left: 8px;
+    margin: 5px;
   }
-  a {
-    display: flex;
-    flex-direction: column;    
+  a {display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 180px;
     font-size: 0.8rem;
     text-decoration: none;
-    text-align: right; 
-  }  
+    text-align: right;
+    .a-cajs {
+      display: flex;
+      align-items: flex-start;
+    }
+    .a-readme {
+      align-items: flex-end;
+    }
+  }
+  span {
+    font-style: italic;
+    text-decoration: underline;
+    color: red;
+  }
 }
 
 
@@ -167,7 +178,6 @@ hr {
 }
 
 .logo {
-  // margin-top: 1em;
   height: 30px;
   width: 90px;
   background-image: url(../images/Samsung_Logo.svg);

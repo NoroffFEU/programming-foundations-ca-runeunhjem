@@ -16,7 +16,7 @@
 body {
   width: 100vw;
   display: block;
-  font-size: 16px;
+  font-size: 13px;
   padding: 0;
 }
 
@@ -166,8 +166,7 @@ hr {
   margin-bottom: 0.8em;
 }
 
-.logo {
-  // margin-top: 1em;
+.logo {padding-top: 8px;
   height: 30px;
   width: 90px;
   background-image: url(../images/Samsung_Logo.svg);

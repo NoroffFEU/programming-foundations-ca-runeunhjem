@@ -16,7 +16,7 @@
 body {
   width: 100vw;
   display: block;
-  font-size: 16px;
+  font-size: 13px;
   padding: 0;
 }
 
@@ -163,11 +163,10 @@ hr {
 .tv__controls,
 .apps__row2,
 .tv__inputs {
-  margin-bottom: 0.8em;
+  margin-bottom: 1em;
 }
 
-.logo {
-  // margin-top: 1em;
+.logo {margin-top: 1em;
   height: 30px;
   width: 90px;
   background-image: url(../images/Samsung_Logo.svg);

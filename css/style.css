@@ -15,7 +15,7 @@
 body {
   width: 100vw;
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   padding: 0;
 }
 
@@ -24,23 +24,22 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 350px;
+  height: 46px;
+}
+header .heading, header .ca {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
 }
 header h1 {
-  margin: 5px;
+  margin-left: 8px;
 }
 header a {
+  display: flex;
+  flex-direction: column;
   font-size: 0.8rem;
   text-decoration: none;
   text-align: right;
-}
-header span {
-  font-style: italic;
-  text-decoration: underline;
-  color: red;
-}
-
-.ca a {
-  display: block;
 }
 
 .tv__frame {

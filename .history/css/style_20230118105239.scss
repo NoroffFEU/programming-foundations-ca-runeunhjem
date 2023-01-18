@@ -16,23 +16,25 @@
 body {
   width: 100vw;
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   padding: 0;
 }
+
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 350px;
-  height: 46px;
-  .heading, .ca {    
+  height: 100px;
+  .heading, .ca {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 0.4em;    
+    gap: 1em;    
   }
   h1 {
-    margin-left: 8px;
+    margin: 5px;
   }
   a {
     display: flex;
@@ -167,7 +169,6 @@ hr {
 }
 
 .logo {
-  // margin-top: 1em;
   height: 30px;
   width: 90px;
   background-image: url(../images/Samsung_Logo.svg);
