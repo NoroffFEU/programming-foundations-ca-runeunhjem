@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  padding: 1em 3em;
+}
+
+.tv__frame {
+    border: 13px solid #000;
+    border-radius: 0.2em;
+    height: calc(2160px/4.5);
+    width: calc(3840px/6);    
+}
+
+.tv__inside {
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+
+}

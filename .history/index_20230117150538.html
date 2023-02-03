@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="Programming,">
+    <title>Programming Foundations CA | Rune Unhjem</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="data:;base64,=">    
+    <!-- <script defer src="js/script.js"></script> -->
+    <!-- <script defer src="js/myTv_CA.js"></script> -->
+    <script defer src="js/optional.js"></script>
+    <script defer src="js/tv.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>This is my TV:</h1>
+      </div>
+      <div class="ca" id="ca">
+        <a href="js/myTv_CA.js">(CA JS FILE IS <span>HERE</span>)</a>
+        <a href="README.md">(CA README IS <span>HERE</span>)</a>
+      </div>
+    </header>
+    <main>
+      <section class="tv">
+        <div class="tv__frame">
+          <div class="active-logo" id="active-logo"><img src="images/input_icon.svg" alt="Active Logo"></div>
+          <div class="tv__inside" id="tv__inside">            
+            What do you want to watch?
+          </div>          
+          <div class="show-console-log" id="show-console-log"></div>
+        </div>
+      </section>
+      <section class="remote">
+        <h2>Samsung Remote</h2>
+        <div class="tv__inputs">
+          <button id="tv">TV</button>
+          <button id="pc">PC</button>
+          <button id="ps5">PS 5</button>
+          <button id="chromecast">Chromecast</button>
+        </div>
+        <hr />
+        <div class="tv__apps">
+          <div class="apps__row1">
+            <button id="netflix">Netflix</button>
+            <button id="disney">Disney</button>
+            <button id="viaplay">Viaplay</button>
+            <button id="hbo">HBO Max</button>
+          </div>
+          <div class="apps__row2">
+            <button id="discovery">discovery+</button>
+            <button id="tv2">TV2 Play</button>
+            <button id="youtube">YouTube</button>
+            <button id="spotify">Spotify</button>
+          </div>
+        </div>
+        <hr />
+        <div class="tv__controls">
+          <button id="power">Power</button>
+          <div id="volume-control">
+            <label for="volume-slider">Volume</label>
+            <input type="range" id="volume-slider" min="0" max="100" value="40" oninput="adjustVolume(this.value)">
+          </div>
+          <!-- <button id="volume-up">Volume +</button>
+          <button id="volume-down">Volume -</button> -->
+          <button id="hdr">HDR</button>
+        </div>
+        <div class="logo"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

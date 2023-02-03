@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+:root {
+  --btn-clr__inactive: #222;
+  --btn-clr-active: #cdcdcd;
+  --btn-txt-clr__inactive: #fff;
+  --btn-txt-clr__active: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: block;
+  font-size: 16px;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  h1 {
+    margin: 5px;
+  }
+  a {
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  span {
+    font-style: italic;
+    text-decoration: underline;
+    color: red;
+  }
+}
+.ca {
+  a {
+   display: block;
+  }
+}
+.tv__frame {
+  margin: 5px;
+  border: 4px solid #000;
+  border-radius: 0.2em;
+  height: calc(2160px / 11);
+  width: calc(3840px / 11);
+}
+.tv__frame {
+  position: relative;
+}
+.tv__inside {  
+  background-color: darkgrey;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.active-logo {
+  display: flex;
+  justify-content: right;
+  height: 20px;  
+  position: absolute;
+  top: 5px;
+  right: 5px;  
+}
+#show-console-log {
+  position: absolute;
+  bottom: 10px;
+  left: 60px;  
+  width: 200px;
+  text-align: center;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 0.5em;
+}
+#volume-control {
+  label {
+    display: block;    
+    text-align: center;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  display: inline-block;
+  justify-items: center;
+  align-items: flex-end;
+}
+
+#volume-slider {
+  flex-grow: 1;
+  width: 140px;
+  margin: 0 12px;
+}
+
+button {
+  width: 82px;
+  height: 24px;
+  font-size: 0.7rem;
+  padding: 5px;
+  border-radius: 1em;
+  border: 1px solid;
+  border-color: grey;
+  background-color: var(--btn-clr__inactive);
+  color: var(--btn-txt-clr__inactive);
+  font-family: "Rubik", sans-serif;
+}
+
+.remote {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  border-radius: 0.5em;
+  background-color: #000;
+  margin: 0 5px;
+  width: calc(3840px / 11);
+  color: var(--btn-txt-clr__inactive);
+  h2 {
+    padding: 0.5em;
+    border-bottom: 1px solid red;
+    margin-bottom: 1em;
+  }
+}
+
+hr {
+  height: 1px;
+  border-color: green;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.tv__controls,
+.apps__row1,
+.apps__row2,
+.tv__inputs {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin: 0 auto;
+  gap: 4px;
+  padding: 0.5em 0;
+}
+.apps__row1,
+.tv__controls {
+  margin-top: 0.8em;
+}
+.tv__controls,
+.apps__row2,
+.tv__inputs {
+  margin-bottom: 0.8em;
+}
+
+.logo {
+  height: 30px;
+  width: 90px;
+  background-image: url(../images/Samsung_Logo.svg);
+  background-size: cover;
+}
